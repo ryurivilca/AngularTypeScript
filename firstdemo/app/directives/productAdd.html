@@ -1,0 +1,36 @@
+<div id="productAdd" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Product</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <strong>Name</strong>
+                            <input id="productName" name="productName" type="text" class="form-control" ng-model="currentProduct.productName" placeholder="Name"/>
+                            <strong>Code</strong>
+                            <input id="productCode" name="productCode" type="text" class="form-control" ng-model="currentProduct.productCode" placeholder="Code"/>
+                            <strong>Date</strong>
+                            <input id="releaseDate" name="releaseDate" type="text" class="form-control" ng-model="currentProduct.releaseDate" placeholder="Release Date"/>
+                            <strong>Description</strong>
+                            <input id="description" name="description" type="text" class="form-control" ng-model="currentProduct.description" placeholder="Description"/>
+                            <strong>Price</strong>
+                            <input id="price" name="price" type="text" class="form-control" ng-model="currentProduct.price" placeholder="Price" />
+                            <strong>Image Url</strong>
+                            <input id="price" name="imageUrl" type="text" class="form-control" ng-model="currentProduct.imageUrl" placeholder="Image Url"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" ng-click="ctrl.save()">Save</button>                
+            </div>
+        </div>
+    </div>
+</div>
